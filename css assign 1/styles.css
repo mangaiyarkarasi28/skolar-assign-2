@@ -1,0 +1,54 @@
+
+body{
+    background-color: rgb(88, 248, 155);
+}
+/* Element Selector */
+h1 {
+    color: blue;
+    text-align: center;
+ 
+}
+
+/* ID Selector */
+#unique-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Class Selector */
+.normal-paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.special-paragraph {
+    background-color: rgb(247, 195, 132);
+    padding: 10px;
+    border: 1px solid orange;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(240, 0, 0);
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Attribute Selector (for attributes like href in links) */
+a[href="#"] {
+    color: rgb(255, 0, 0);
+}
+
+/* Pseudo-class (:hover) */
+label:hover {
+    background-color: lightblue;
+}
+
+/* Pseudo-element (::before) */
+label::before {
+    content: "* ";
+    color: red;
+}

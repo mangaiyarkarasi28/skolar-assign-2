@@ -1,0 +1,72 @@
+
+.grid-container {
+    display: grid;
+    gap: 10px; 
+    grid-template-areas:
+        "header header header"
+        "sidebar main content"
+        "footer footer footer";
+    grid-template-rows: 100px 1fr 100px; 
+    grid-template-columns: 200px 1fr 200px; 
+    height: 600px;
+
+}
+
+.item1 {
+    grid-area: header; 
+    background-color: lightblue;
+  text-align: center;
+
+}
+
+.item2 {
+    grid-area: sidebar; 
+    background-color: lightgreen;
+  
+    text-align: center;
+}
+
+.item3 {
+    grid-area: main;
+    background-color: rgb(207, 124, 14);
+    display: grid; 
+    grid-template-areas:
+        "news news"
+        "events calendar";
+    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr; 
+}
+
+.item4 {
+    grid-area: content;
+    background-color: rgb(156, 156, 43);
+    text-align: center;
+}
+
+.item5 {
+    grid-area: footer; 
+    background-color: rgb(35, 99, 69);
+    text-align: center;
+}
+
+.news {
+    grid-area: news; /* Nested grid item */
+    background-color: lightpink;
+    text-align: center;
+    margin: 2px;
+}
+
+.events {
+    grid-area: events; /* Nested grid item */
+    background-color: lightseagreen;
+    margin: 2px;
+    text-align: center;
+}
+
+.calendar {
+    grid-area: calendar; /* Nested grid item */
+    background-color: lightskyblue;
+    margin: 2px;
+    text-align: center;
+}
+
